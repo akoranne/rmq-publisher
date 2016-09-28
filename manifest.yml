@@ -1,0 +1,10 @@
+---
+applications:
+- name: MQ-Publisher-Service
+  memory: 512M
+  instances: 1
+  host: mq-publisher-service
+  path: ./target/mq-publisher-service-0.0.1-SNAPSHOT.jar
+  env:
+    CF_TARGET: https://api.run.haas-27.pez.pivotal.io
+    

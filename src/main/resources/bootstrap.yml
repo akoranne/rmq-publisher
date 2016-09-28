@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: mq-publisher-service
+  cloud:
+    services:
+      registrationMethod: route
+security:
+  basic:
+    enabled: false
+server:
+     port: 9000
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
